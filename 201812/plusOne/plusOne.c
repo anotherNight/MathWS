@@ -1,3 +1,5 @@
+#include <stdio.h>
+
 /**
  * Return an array of size *returnSize.
  * Note: The returned array must be malloced, assume caller calls free().
@@ -35,7 +37,7 @@ int main(){
   printf("test c main\n");
   int a[7] = {3,5,1,1,2,3,2};
   int size = 0;
-
-
+  plusOne(a,7,&size);
+  printf("new size %d \n",size);
   return 0;
 }
